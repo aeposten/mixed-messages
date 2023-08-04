@@ -1,4 +1,4 @@
-const quotes = [
+export const quotes = [
     {
       quote: "The Dude abides.",
       character: "The Dude",
@@ -75,19 +75,3 @@ const quotes = [
       movie: "Highway 61"
     }
   ];
-
-function selectQuote(arr) {
-    const randomNumber = Math.floor(Math.random() * arr.length);
-    const quote = arr[randomNumber];
-
-    return quote;
-}
-
-function logQuote(quoteObj) {
-   const {quote, character, movie} = quoteObj;
-
-   console.log(`'${quote}' -${character} in ${movie}`);
-}
-
-logQuote(selectQuote(quotes));
-
